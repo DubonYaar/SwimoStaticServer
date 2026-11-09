@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swimoo — Swim tracking for Apple Watch</title>
+    <meta
+      name="description"
+      content="Swimoo turns Apple Watch into a focused swim coach: live metrics, lap graphs, open-water routes, and clean history."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="water" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand-mark" href="#top">Swimoo</a>
+      <nav class="top-nav">
+        <a href="#metrics">Metrics</a>
+        <a href="#open-water">Open water</a>
+        <a href="#history">History</a>
+      </nav>
+      <a class="top-cta" href="#get">Get the app</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="brand-hero">Swimoo</p>
+          <h1>Every length, clear on your wrist.</h1>
+          <p class="lede">
+            A watch-first swim app for pool laps, open-water distance, and the
+            metrics you actually check mid-set.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#get">Download on Apple Watch</a>
+            <a class="btn ghost" href="#metrics">See capabilities</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="watch-stage">
+            <img class="logo-orb" src="assets/logo.png" alt="" />
+            <div class="watch-face">
+              <span class="wf-label">Laps</span>
+              <span class="wf-value">24</span>
+              <span class="wf-sub">1:02 · avg</span>
+              <div class="wf-bars">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band reveal" id="metrics">
+        <p class="eyebrow">On-wrist metrics</p>
+        <h2>Build the screen you swim with.</h2>
+        <p class="support">
+          Pick main and secondary widgets — laps, time, distance, averages —
+          then leave the phone on the deck.
+        </p>
+        <ul class="metric-strip">
+          <li>Laps</li>
+          <li>Time</li>
+          <li>Distance</li>
+          <li>Average</li>
+          <li>Heart rate</li>
+        </ul>
+      </section>
+
+      <section class="split reveal" id="open-water">
+        <div>
+          <p class="eyebrow">Open water</p>
+          <h2>GPS when the pool walls disappear.</h2>
+          <p class="support">
+            Track open-water distance and route with location, while HealthKit
+            keeps the workout honest.
+          </p>
+        </div>
+        <div class="route-panel" aria-hidden="true">
+          <svg viewBox="0 0 320 220" fill="none">
+            <path
+              class="route-line"
+              d="M28 160 C70 40, 120 200, 160 90 S250 40, 292 130"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="band reveal" id="history">
+        <p class="eyebrow">History</p>
+        <h2>See the set after you towel off.</h2>
+        <p class="support">
+          Browse past swims with lap graphs, duration, and routes — swipe
+          through tiles that feel like the watch, not a spreadsheet.
+        </p>
+        <div class="graph" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span>
+        </div>
+      </section>
+
+      <section class="band reveal" id="setup">
+        <p class="eyebrow">Setup</p>
+        <h2>Configure once. Dive in faster.</h2>
+        <p class="support">
+          Pool length, feedback cadence, and averages — tuned before you hit
+          Start, so the water is the only interruption.
+        </p>
+      </section>
+
+      <section class="close reveal" id="get">
+        <h2>Swimoo on Apple Watch</h2>
+        <p class="support">
+          Built for the pool lane and the open shoreline. Install from the App
+          Store on Apple Watch.
+        </p>
+        <a class="btn primary" href="https://apps.apple.com" rel="noopener"
+          >View on the App Store</a
+        >
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>Swimoo</span>
+      <span>© <span id="year"></span></span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
