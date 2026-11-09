@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swimo — Swim tracking for Apple Watch</title>
+    <meta
+      name="description"
+      content="Swimo is the Apple Watch swim app for custom workout screens, huge mid-length type, pool laps, and open-water distance."
+    />
+    <link rel="icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand-mark" href="marketing.html">SWIMO</a>
+      <nav class="top-nav">
+        <a href="#workout">Workout</a>
+        <a href="#open-water">Open water</a>
+        <a href="#subscription">Subscription</a>
+      </nav>
+      <nav class="top-nav legal-nav">
+        <a href="privacy">Privacy</a>
+        <a href="support">Support</a>
+        <a href="terms">Terms</a>
+      </nav>
+      <a class="top-cta" href="https://apps.apple.com/us/app/swimo/id6764766248" rel="noopener">Get the app</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="brand-hero">SWIMO</p>
+          <h1>The swimming app for Apple Watch.</h1>
+          <p class="lede">
+            Customize the workout screen, read it mid-length, and keep pool laps
+            and open-water distance in one place.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://apps.apple.com/us/app/swimo/id6764766248" rel="noopener">View on the App Store</a>
+            <a class="btn ghost" href="#workout">See the workout screen</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="watch-stage">
+            <img class="logo-orb" src="assets/logo.png" alt="" />
+            <div class="watch-face">
+              <span class="wf-label">Laps</span>
+              <span class="wf-value">24</span>
+              <span class="wf-sub">1:02 · avg</span>
+              <div class="wf-bars">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band reveal" id="workout">
+        <p class="eyebrow">On the wrist</p>
+        <h2>Only the numbers you swim with.</h2>
+        <p class="support">
+          Huge, high-contrast type for anyone whose vision is not perfect in the
+          water. Change the screen without leaving the workout.
+        </p>
+        <ul class="feature-list">
+          <li>
+            <h2>Your layout</h2>
+            <p>Choose the widgets on the workout screen. Laps, time, distance, average, heart rate.</p>
+          </li>
+          <li>
+            <h2>Readable mid-length</h2>
+            <p>Big italic type, built to be glanced at between strokes.</p>
+          </li>
+          <li>
+            <h2>Stay in the set</h2>
+            <p>Adjust workout and display settings without ending the swim.</p>
+          </li>
+          <li>
+            <h2>Share from the watch</h2>
+            <p>Send a workout summary straight from Apple Watch when you finish.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="split reveal" id="open-water">
+        <div>
+          <p class="eyebrow">Pool and open water</p>
+          <h2>Laps in the lane. Distance offshore.</h2>
+          <p class="support">
+            Pool swims count laps. Open-water swims use location only while the
+            workout is running. Apple Health keeps the workouts and activity
+            together.
+          </p>
+        </div>
+        <div class="route-panel" aria-hidden="true">
+          <svg viewBox="0 0 320 220" fill="none">
+            <path
+              class="route-line"
+              d="M28 160 C70 40, 120 200, 160 90 S250 40, 292 130"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="band reveal" id="subscription">
+        <p class="eyebrow">Swimo Premium</p>
+        <h2>Start with three free workouts.</h2>
+        <p class="support">
+          Then a one-week free trial. After that, monthly or yearly. Cancel
+          anytime in your Apple ID subscriptions. Payment is handled by Apple.
+        </p>
+        <ul class="metric-strip">
+          <li>3 free</li>
+          <li>1 week trial</li>
+          <li>Monthly</li>
+          <li>Yearly</li>
+        </ul>
+      </section>
+
+      <section class="close reveal" id="get">
+        <h2>Swimo on the App Store</h2>
+        <p class="support">
+          For Apple Watch. Privacy policy, support, and terms are on this site.
+        </p>
+        <a class="btn primary" href="https://apps.apple.com/us/app/swimo/id6764766248" rel="noopener">View on the App Store</a>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>SWIMO</span>
+      <nav class="foot-nav">
+        <a href="marketing.html">Home</a>
+        <a href="privacy">Privacy</a>
+        <a href="support">Support</a>
+        <a href="terms">Terms</a>
+      </nav>
+      <span>© <span id="year"></span></span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
